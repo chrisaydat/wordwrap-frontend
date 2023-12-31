@@ -1,43 +1,57 @@
 .App {
   text-align: center;
-}
-
-.App-header {
-  background-color: #fff;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  min-height: 100vh;
+  background-color: #282c34; /* or any color you prefer */
+}
+
+.App-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.App-logo {
+  max-width: 100px; /* Adjust the size as needed */
+  margin-bottom: 20px; /* Space below the logo */
 }
 
 .text-input {
-  margin: 20px;
+  width: 800px; /* Adjust width as needed */
+  height: 500px; /* Adjust height as needed */
+  margin: 10px 0; /* Vertical margin, no horizontal margin */
   padding: 10px;
-  width: 300px;
-  height: 150px;
   font-size: 16px;
   border: 2px solid #09d3ac;
   border-radius: 4px;
 }
 
 .submit-button {
-  background-color: #09d3ac;
-  color: white;
+  width: auto; /* Let it occupy the space it needs based on content and padding */
   padding: 10px 20px;
+  margin-top: 50px; /* Ensure there is space above the button only */
+  font-size: 16px;
+  color: white;
+  background-color: #09d3ac;
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  font-size: 16px;
+  align-self: center; /* Align the button to the center of the flex container */
 }
 
 .submit-button:hover {
   background-color: #07b89e;
 }
 
-.App-logo {
-  max-width: 300px; /* Adjust size as needed */
-  margin-bottom: 20px; /* Spacing below the logo */
+.transformed-text {
+  color: #fff; /* White color text */
+  margin-top: 20px; /* Space above the transformed text */
+}
+
+.error-message {
+  color: red;
+  margin-top: 10px; /* Space above the error message */
 }
